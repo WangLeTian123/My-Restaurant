@@ -69,9 +69,6 @@ public class Order {
     @ApiModelProperty("结束时间")
     private LocalDateTime endDate;
 
-    @ApiModelProperty("线上订单支付")
-    private String onlineCode;
-
     @ApiModelProperty("点餐详情,接口中不需要带入")
     @TableField(exist = false)
     private List<OrderFood> foods;
